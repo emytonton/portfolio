@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  background-color: #0f0a14;
+  color: #fff5f9;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+body {
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  body { cursor: auto; }
+}
+
+::selection {
+  background: rgba(255, 142, 199, 0.4);
+  color: #fff5f9;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0f0a14; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff8ec7, #c8a2ff);
+  border-radius: 999px;
+  border: 2px solid #0f0a14;
+}
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #ffb3d9, #dcc4ff); }
+
+@layer components {
+  .glass {
+    background: linear-gradient(135deg, rgba(255,142,199,0.08), rgba(200,162,255,0.06));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 209, 232, 0.12);
+  }
+  .glass-strong {
+    background: linear-gradient(135deg, rgba(255,142,199,0.14), rgba(200,162,255,0.10));
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 209, 232, 0.18);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #ff8ec7 0%, #c8a2ff 50%, #9d6ce6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .text-gradient-soft {
+    background: linear-gradient(135deg, #ffd1e8 0%, #dcc4ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .btn-kawaii {
+    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white transition-all duration-300;
+    background: linear-gradient(135deg, #ff8ec7, #c8a2ff);
+    box-shadow: 0 10px 30px -8px rgba(255,142,199,0.6), 0 0 0 1px rgba(255,209,232,0.2) inset;
+  }
+  .btn-kawaii::before {
+    content: '';
+    position: absolute; inset: 0;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #ffb3d9, #dcc4ff);
+    opacity: 0; transition: opacity .3s ease;
+  }
+  .btn-kawaii:hover::before { opacity: 1; }
+  .btn-kawaii > * { position: relative; z-index: 1; }
+  .btn-kawaii:hover { transform: translateY(-2px); box-shadow: 0 14px 40px -8px rgba(255,142,199,0.7); }
+
+  .btn-ghost {
+    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-semibold text-kawaii-rose transition-all duration-300;
+    background: rgba(255,209,232,0.04);
+    border: 1px solid rgba(255,209,232,0.25);
+  }
+  .btn-ghost:hover {
+    background: rgba(255,142,199,0.12);
+    border-color: rgba(255,142,199,0.55);
+    transform: translateY(-2px);
+    color: #fff5f9;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium;
+    background: rgba(255,142,199,0.1);
+    border: 1px solid rgba(255,142,199,0.25);
+    color: #ffd1e8;
+  }
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight font-display;
+  }
+  .section-eyebrow {
+    @apply font-script text-2xl md:text-3xl text-gradient-soft;
+  }
+}
+
+@layer utilities {
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 70%, transparent 100%);
+  }
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(255,209,232,0.45);
+    color: transparent;
+  }
+  .perspective {
+    perspective: 1200px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+}
