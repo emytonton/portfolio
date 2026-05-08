@@ -37,7 +37,7 @@ export default function Navbar() {
       >
         <motion.div
           style={{ '--bg-op': bgOpacity }}
-          className={`glass-strong rounded-full pl-4 pr-3 py-2.5 flex items-center justify-between gap-3 shadow-kawaii ${
+          className={`glass-strong rounded-full pl-4 pr-3 py-2.5 flex items-center gap-2 shadow-kawaii overflow-hidden ${
             scrolled ? 'shadow-kawaii-lg' : ''
           }`}
         >
@@ -54,12 +54,12 @@ export default function Navbar() {
             </div>
           </a>
 
-          <ul className="hidden xl:flex items-center gap-0.5 mx-auto">
+          <ul className="hidden xl:flex items-center justify-center gap-0.5 flex-1 min-w-0">
             {links.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="relative px-3 py-2 text-[13px] text-kawaii-rose/80 hover:text-white rounded-full transition-colors group whitespace-nowrap"
+                  className="relative px-2.5 py-2 text-[13px] text-kawaii-rose/80 hover:text-white rounded-full transition-colors group whitespace-nowrap"
                   data-cursor="hover"
                 >
                   <span className="relative z-10">{l.label}</span>
@@ -68,6 +68,9 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+
+          {/* Spacer pra empurrar hamburguer pra direita quando nav está oculto */}
+          <div className="flex-1 xl:hidden" />
 
           <div className="flex items-center gap-2 shrink-0">
             <a
