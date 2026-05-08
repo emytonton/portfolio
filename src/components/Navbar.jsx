@@ -54,7 +54,7 @@ export default function Navbar() {
             </div>
           </a>
 
-          <ul className="hidden lg:flex items-center gap-0.5 mx-auto">
+          <ul className="hidden xl:flex items-center gap-0.5 mx-auto">
             {links.map((l) => (
               <li key={l.href}>
                 <a
@@ -77,17 +77,9 @@ export default function Navbar() {
             >
               Vamos conversar ✨
             </a>
-            <a
-              href="#contact"
-              className="hidden md:inline-flex xl:hidden btn-kawaii !py-2 !px-4 !text-[13px]"
-              data-cursor="hover"
-              aria-label="Contato"
-            >
-              ✨ Contato
-            </a>
             <button
               onClick={() => setOpen(true)}
-              className="lg:hidden w-10 h-10 rounded-full glass flex items-center justify-center"
+              className="xl:hidden w-10 h-10 rounded-full glass flex items-center justify-center shrink-0"
               aria-label="Abrir menu"
             >
               <HiMenuAlt4 className="text-kawaii-rose text-xl" />
