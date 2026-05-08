@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🌸 Emilly Paiva — Portfolio Kawaii
+# 🌸 Emilly Paiva — Portfólio
 
-### Software Engineer · Backend & Full-Stack Developer
+### Software Engineer ·  Full-Stack Developer
 
 *Construindo experiências digitais com código limpo, arquitetura sólida e um toque de criatividade.*
 
@@ -18,7 +18,7 @@
 
 ## ✨ Sobre o Projeto
 
-Portfólio pessoal moderno com identidade visual **kawaii** — paleta em rosa, lilás e branco, glassmorphism, partículas flutuantes, blobs animados e microinterações em **toda** a navegação. O objetivo foi entregar algo com nível visual de portfólios premiados (Awwwards / Dribbble) sem abrir mão de **performance**, **acessibilidade** e **boas práticas de código**.
+Portfólio pessoal moderno com identidade visual com paleta em rosa, lilás e branco, glassmorphism, partículas flutuantes, blobs animados e microinterações em **toda** a navegação. O objetivo foi entregar algo com nível visual de portfólios premiados (Awwwards / Dribbble) sem abrir mão de **performance**, **acessibilidade** e **boas práticas de código**.
 
 > Construído como peça de currículo viva: cada animação, cada token de design e cada componente foram pensados para mostrar fluência em React moderno, design system, animação web e arquitetura frontend.
 
@@ -26,7 +26,7 @@ Portfólio pessoal moderno com identidade visual **kawaii** — paleta em rosa, 
 
 | Recurso | Implementação |
 |---------|---------------|
-| 🎀 **Loading screen kawaii** | Flor girando + barra de progresso + sparkles aleatórias |
+| 🎀 **Loading screen** | Flor girando + barra de progresso + sparkles aleatórias |
 | 🖱️ **Cursor customizado** | Halo rosa com spring physics + escala em hover |
 | 🌊 **Smooth scroll** | Lenis com easing suave e lerp configurado |
 | 📊 **Scroll progress bar** | Barra superior gradiente que cresce com o scroll |
@@ -133,51 +133,7 @@ npm run preview
 
 A aplicação abre automaticamente em `http://localhost:5173`. Hot Module Reload está habilitado — qualquer alteração reflete na hora.
 
-## 🎨 Customização
 
-### Trocar a paleta
-
-Toda a identidade visual está centralizada em [`tailwind.config.js`](tailwind.config.js) → `theme.extend.colors.kawaii`:
-
-```js
-kawaii: {
-  bg:        '#0f0a14',  // background base
-  surface:   '#1a1322',  // superfícies elevadas
-  pink:      '#ff8ec7',  // primária
-  lilac:     '#c8a2ff',  // secundária
-  rose:      '#ffd1e8',  // accent/text suave
-  purple:    '#9d6ce6',  // gradient end
-  cream:     '#fff5f9',  // texto principal
-}
-```
-
-Mude esses tokens e **toda** a UI se atualiza — `text-kawaii-pink`, `bg-kawaii-gradient`, `shadow-glow-pink` etc derivam dali.
-
-### Atualizar conteúdo
-
-Os textos vivem em [`src/data/`](src/data/) — basta editar:
-- `profile.js` → bio, contatos, highlights do hero
-- `experiences.js` → experiências profissionais
-- `projects.js` → projetos exibidos
-- `skills.js` → tecnologias e níveis
-- `timeline.js` → marcos da trajetória
-
-Não há acoplamento entre dados e componentes — tudo é props-driven.
-
-### Adicionar uma seção
-
-1. Cria o componente em `src/components/MinhaSecao.jsx`
-2. Importa em `src/App.jsx` e adiciona dentro do `<main>`
-3. Adiciona o link na nav em `src/components/Navbar.jsx` (`links` array)
-
-## ⚡ Performance
-
-- **Vite HMR** sub-segundo no dev
-- Animações usam `transform`/`opacity` (compostas pela GPU, não causam reflow)
-- `Particles` memoizado com `useMemo` para evitar regeneração
-- `IntersectionObserver` em `GitHubStats` para iniciar contadores só quando visível
-- `viewport={{ once: true }}` em todas as animações de entrada (não re-disparam)
-- Smooth scroll sem JavaScript polling — Lenis usa `requestAnimationFrame`
 
 ## ♿ Acessibilidade
 
@@ -187,23 +143,8 @@ Não há acoplamento entre dados e componentes — tudo é props-driven.
 - Cursor customizado **desabilitado** em telas mobile (`@media (max-width: 768px)`)
 - Estrutura semântica (`<section>`, `<nav>`, `<main>`, `<footer>`)
 
-## 🌐 Deploy
 
-Pronto para qualquer plataforma de static hosting:
 
-| Plataforma | Comando |
-|------------|---------|
-| **Vercel** | `vercel` (autodetecta Vite) |
-| **Netlify** | build: `npm run build` · publish: `dist` |
-| **GitHub Pages** | `npm run build` → publica `dist/` |
-| **Cloudflare Pages** | build: `npm run build` · output: `dist` |
-
-## 📊 Métricas
-
-- **Lighthouse Performance:** 95+
-- **Bundle size (gzip):** ~140KB (React + Framer + Lenis + Icons)
-- **First Contentful Paint:** < 1s em conexão 4G
-- **Tempo total de scroll:** smooth 60fps mesmo com partículas
 
 ## 💌 Contato
 
@@ -218,14 +159,11 @@ Software Engineer · Quixadá, Ceará 🇧🇷
 
 </div>
 
-## 📜 Licença
-
-MIT — sinta-se livre para usar como inspiração para o seu próprio portfólio. Apenas peço que **não copie pixel a pixel** sem dar os créditos. 🌷
 
 ---
 
 <div align="center">
 
-*Feito com 💖, ☕ e ~60 animações em Framer Motion por **Emilly Paiva**.*
+*Feito com 💖 e ~60 animações em Framer Motion por **Emilly Paiva**.*
 
 </div>
