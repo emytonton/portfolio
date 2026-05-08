@@ -54,7 +54,7 @@ export default function Navbar() {
             </div>
           </a>
 
-          <ul className="hidden xl:flex items-center justify-center gap-0.5 flex-1 min-w-0">
+          <ul className="hidden xl:flex items-center gap-0.5 ml-2">
             {links.map((l) => (
               <li key={l.href}>
                 <a
@@ -69,10 +69,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Spacer pra empurrar hamburguer pra direita quando nav está oculto */}
-          <div className="flex-1 xl:hidden" />
-
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-2 shrink-0 ml-auto">
             <a
               href="#contact"
               className="hidden xl:inline-flex btn-kawaii !py-2 !px-4 !text-[13px] whitespace-nowrap"
