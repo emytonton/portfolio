@@ -1,7 +1,7 @@
 export const experiences = [
   {
     id: 'ford-iel',
-    role: 'Pesquisadora — Programa IEL',
+    role: 'Pesquisadora — Ford Motor Company',
     company: 'IEL × Ford Motor Company',
     period: 'Junho 2026 — Atualmente',
     location: 'Pesquisa, Desenvolvimento e Inovação · Indústria Automotiva',
