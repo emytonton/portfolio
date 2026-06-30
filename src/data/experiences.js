@@ -1,5 +1,21 @@
 export const experiences = [
   {
+    id: 'ford-iel',
+    role: 'Pesquisadora — Programa IEL',
+    company: 'IEL × Ford Motor Company',
+    period: 'Junho 2026 — Atualmente',
+    location: 'Pesquisa, Desenvolvimento e Inovação · Indústria Automotiva',
+    summary: 'Pesquisadora no Programa IEL, em parceria com a Ford Motor Company, contribuindo em um projeto de Pesquisa, Desenvolvimento e Inovação (P&D&I) focado em aplicar Inteligência Artificial para otimizar o processo de desenvolvimento de projetos de redução de custos em módulos eletrônicos automotivos.',
+    bullets: [
+      'Aplicação de Inteligência Artificial para otimizar o processo de desenvolvimento de projetos de redução de custos.',
+      'Atuação em projeto de Pesquisa, Desenvolvimento e Inovação (P&D&I) em parceria com a Ford Motor Company.',
+      'Análise e otimização de processos voltados a módulos eletrônicos automotivos.',
+      'Pesquisa aplicada alinhada às diretrizes do Programa IEL (Instituto Euvaldo Lodi).',
+      'Colaboração com times multidisciplinares de engenharia e inovação.'
+    ],
+    stack: ['Inteligência Artificial', 'Pesquisa Aplicada', 'P&D&I', 'Indústria Automotiva']
+  },
+  {
     id: 'fastef',
     role: 'Desenvolvedora Backend Node.js',
     company: 'FASTEF — Lab. Alan Turing (ATLab) × Akiyama',
@@ -20,7 +36,7 @@ export const experiences = [
     id: 'rm',
     role: 'Desenvolvedora Full Stack — Estágio',
     company: 'RM Mineração',
-    period: 'Dezembro 2025 — Atualmente',
+    period: 'Dezembro 2025 — Junho 2026',
     location: 'Full-Stack Web',
     summary: 'Aplicações web internas integrando frontend e backend, automação de fluxos e dashboards analíticos.',
     bullets: [

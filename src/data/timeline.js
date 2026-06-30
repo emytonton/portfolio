@@ -24,6 +24,12 @@ export const timeline = [
     emoji: '🔬'
   },
   {
+    year: '2026',
+    title: 'Pesquisadora — IEL × Ford Motor Company',
+    description: 'Pesquisadora no Programa IEL, em parceria com a Ford Motor Company, em projeto de P&D&I aplicando Inteligência Artificial para otimizar processos de redução de custos em módulos eletrônicos automotivos.',
+    emoji: '🚗'
+  },
+  {
     year: 'Em curso',
     title: 'TCC: Kotlin Multiplatform vs React Native',
     description: 'Pesquisa comparativa entre KMP e React Native no desenvolvimento mobile moderno.',
