@@ -5,10 +5,10 @@ import { profile } from '../data/profile'
 import { fadeUp, stagger } from '../hooks/useReveal'
 
 const stats = [
-  { id: 'repos', label: 'Repositórios públicos', value: 30, suffix: '+', icon: FaCodeBranch },
-  { id: 'commits', label: 'Commits anuais', value: 600, suffix: '+', icon: FaFire },
-  { id: 'languages', label: 'Linguagens dominadas', value: 7, suffix: '', icon: FaStar },
-  { id: 'years', label: 'Anos codando', value: 3, suffix: '+', icon: FaGithub }
+  { id: 'repos', label: 'Repositórios públicos', value: 38, suffix: '', icon: FaCodeBranch },
+  { id: 'commits', label: 'Commits no último ano', value: 670, suffix: '+', icon: FaFire },
+  { id: 'languages', label: 'Linguagens nos repositórios', value: 8, suffix: '', icon: FaStar },
+  { id: 'years', label: 'Anos no GitHub', value: 3, suffix: '', icon: FaGithub }
 ]
 
 function useCount(target, inView) {
@@ -78,7 +78,7 @@ export default function GitHubStats() {
             Código que vive no <span className="text-gradient">GitHub</span>
           </motion.h2>
           <motion.p variants={fadeUp} className="text-kawaii-rose/75 text-lg">
-            Aprendizados, experimentos, projetos universitários e produção — tudo aberto.
+            Aprendizados, experimentos, projetos universitários e produção: tudo aberto.
           </motion.p>
         </motion.div>
 
@@ -107,7 +107,7 @@ export default function GitHubStats() {
               Quer ver o código de tudo isso? 💖
             </h3>
             <p className="text-kawaii-rose/80 max-w-xl">
-              30+ repositórios públicos: APIs em Node.js, microsserviços em Java, mobile em Kotlin/React Native, frontends em React e Electron.
+              38 repositórios públicos: APIs em Node.js e TypeScript, microsserviços em Java, mobile em Kotlin e React Native, frontends em React e experimentos em Go e C++.
             </p>
           </div>
           <a

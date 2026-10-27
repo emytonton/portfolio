@@ -7,26 +7,26 @@ export const timeline = [
   },
   {
     year: '2025',
-    title: 'Bolsista UFC — Projeto Colonymon',
+    title: 'Bolsista UFC · Projeto Colonymon',
     description: 'Migração crítica do React Native, redução de 40% nos crashes e apresentação de artigo técnico nos Encontros Universitários.',
     emoji: '🐝'
   },
   {
     year: '2026',
-    title: 'Estágio Full-Stack — RM Mineração',
+    title: 'Estágio Full-Stack · RM Mineração',
     description: 'Aplicações React + Node.js, refatoração de código legado e migração de dados para Data Lake.',
     emoji: '⛏️'
   },
   {
     year: '2026',
-    title: 'Backend Node.js — FASTEF × Akiyama',
-    description: 'Projeto de pesquisa aplicada em parceria com a Akiyama — empresa referência nacional em biometria e identificação digital. ',
+    title: 'Backend Node.js · FASTEF × Akiyama',
+    description: 'Projeto de pesquisa aplicada em parceria com a Akiyama, empresa referência nacional em biometria e identificação digital. ',
     emoji: '🔬'
   },
   {
     year: '2026',
-    title: 'Pesquisadora — IEL × Ford Motor Company',
-    description: 'Pesquisadora no Programa IEL, em parceria com a Ford Motor Company, em projeto de P&D&I aplicando Inteligência Artificial para otimizar processos de redução de custos em módulos eletrônicos automotivos.',
+    title: 'AI Researcher · IEL × Ford Motor Company',
+    description: 'AI Researcher na Ford Motor Company pelo Programa IEL, desenvolvendo agentes de IA com Python, Google ADK e Gemini no Vertex AI, além de soluções RAG com PostgreSQL e pgvector para engenharia automotiva.',
     emoji: '🚗'
   },
   {

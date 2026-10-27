@@ -23,7 +23,7 @@ export default function Stack() {
             Tecnologias que eu <span className="text-gradient">amo</span> usar
           </motion.h2>
           <motion.p variants={fadeUp} className="text-kawaii-rose/75 text-lg">
-            Backend, frontend, dados, DevOps e qualidade — tudo conectado por boas práticas.
+            Backend, frontend, dados, DevOps e qualidade, tudo conectado por boas práticas.
           </motion.p>
         </motion.div>
 

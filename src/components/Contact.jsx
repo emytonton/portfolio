@@ -10,8 +10,8 @@ export default function Contact() {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`Olá Emilly! — ${form.name}`)
-    const body = encodeURIComponent(`${form.message}\n\n— ${form.name}\n${form.email}`)
+    const subject = encodeURIComponent(`Olá Emilly! | ${form.name}`)
+    const body = encodeURIComponent(`${form.message}\n\n${form.name}\n${form.email}`)
     window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`
     setSent(true)
     setTimeout(() => setSent(false), 4000)

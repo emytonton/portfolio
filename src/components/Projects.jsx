@@ -21,7 +21,7 @@ export default function Projects() {
             Coisas que eu <span className="text-gradient">construí</span> recentemente
           </motion.h2>
           <motion.p variants={fadeUp} className="text-kawaii-rose/75 text-lg">
-            Uma seleção de produtos, APIs e experiências mobile — do estudo até a produção.
+            Uma seleção de produtos, APIs e experiências mobile, do estudo até a produção.
           </motion.p>
         </motion.div>
 

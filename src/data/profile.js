@@ -3,7 +3,7 @@ export const profile = {
   fullName: 'Emilly Paiva Belo',
   role: 'Software Engineer',
   subRoles: ['Backend Developer', 'Full-Stack Developer', 'Node.js · React'],
-  location: 'Quixadá, Ceará — Brasil',
+  location: 'Quixadá, Ceará, Brasil',
   email: 'emillypaiva3260@gmail.com',
   phone: '+55 (74) 98854-3124',
   github: 'https://github.com/emytonton',

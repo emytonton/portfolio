@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 'decideai',
-    title: 'DecideAí — Tomada de Decisão',
+    title: 'DecideAí · Tomada de Decisão',
     tagline: 'App social que elimina a fadiga de decisão',
     description: 'Aplicação para auxílio na tomada de decisões em grupo ou solo. Backend escalável com Socket.io para tempo real e AWS S3 para mídia.',
     highlights: [
@@ -61,7 +61,7 @@ export const projects = [
     tagline: 'Sistema completo para escritório contábil',
     description: 'Plataforma full-stack para gestão de escritório de contabilidade. Em desenvolvimento ativo, com foco em organização documental, clientes e processos contábeis.',
     highlights: [
-      'Em desenvolvimento — fullstack',
+      'Em desenvolvimento, fullstack',
       'Backend em TypeScript',
       'Frontend web responsivo',
       'Foco em produtividade contábil'
@@ -134,7 +134,7 @@ export const projects = [
   },
   {
     id: 'codex',
-    title: 'Codex — API de Leituras',
+    title: 'Codex · API de Leituras',
     tagline: 'Gestão pessoal de livros e leituras',
     description: 'API para gerenciar leituras, livros lidos, em andamento e wishlists. Foco em organização de hábito de leitura, interação com grupo de leituas e chat dentro da aplicação.',
     highlights: [
@@ -152,7 +152,7 @@ export const projects = [
   },
   {
     id: 'goshopp',
-    title: 'GoShopp — Marketplace API',
+    title: 'GoShopp · Marketplace API',
     tagline: 'Marketplace serverless com Clean Architecture',
     description: 'API RESTful para um marketplace, desenvolvida com NestJS, Prisma e MongoDB. Com Clean Architecture, testes unitários com Jest, autenticação JWT/Bcrypt e deploy serverless na Vercel.',
     highlights: [
